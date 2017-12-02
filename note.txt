@@ -1,0 +1,5 @@
+http://opac.hust.edu.vn/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=PATRON&function=PATRONFULLCARD&SourceScreen=PATRONFULLCARD&
+sessionid=2017061600112420096&skin=default&conf=.%2fchameleon.conf&lng=vn&u1=12&itemu1=12&pos=1&prevpos=1&
+
+http://opac.hust.edu.vn/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=PATRON&function=PATRONFULLCARD&SourceScreen=PATRONATTEMPT&
+sessionid=2017061523212419263&skin=default&conf=.%2fchameleon.conf&lng=vn&u1=12&itemu1=12&pos=1&prevpos=1&

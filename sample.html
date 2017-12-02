@@ -1,0 +1,803 @@
+<!-- $Id: errorscreencomm.html,v 1.2 2003/08/19 13:14:39 webgw Exp $ -->
+<!doctype html public "-//w3c//dtd html 4.0 transitional//VN">
+<html lang="vn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Refresh" content="30000; url=http://">
+<meta name="Author" content="VTLS, Inc., Blacksburg, VA, USA">
+<meta name="Generator" content="VTLS Chameleon iPortal 2004.43.3">
+<meta name="Copyright" content="VTLS Inc 1995-2003 ">
+
+<title>VTLS Chameleon iPortal Communication Error Occurred.</title>
+<!-- $Id: style_definitions.html,v 1.8 2004/01/05 18:21:06 webgw Exp $ -->
+<style type="text/css">
+<!--
+th {text-align:left; font-weight:bold;}
+p, body, td, th, select, input, h2, h3 {font-family: Arial,  Vernada, Geneva, Helvetica, Sans-Serif;}
+h2 {font-size: 16pt; font-weight:normal; margin-bottom: 5px;}
+h3 {font-size: 12pt; font-weight:bold;}
+ol, ul {margin-bottom: 3px; margin-top: 6px;}
+select, input, p, b
+{
+	font-size:100%;
+}
+input.quick
+{
+	width: 225px;
+}
+.patSumWelcome
+{
+ font-size: 17pt; font-weight:normal; margin-bottom: 5px;
+}
+.patSumCheckedOutHeader, .patSumAccountHeader, .patSumRequestedHeader, .patSumHistoryHeader
+{
+ font-size: 15pt; font-weight:normal; margin-bottom: 5px; margin-top: 10px;
+}
+.patSumOverviewInfoLink
+{
+ margin-left:5px; font-size: 50%; 
+}
+.patSumRequestedColData, .patSumCheckedOutColData
+{
+ vertical-align:top;
+}
+.patAccountDetailHeader, .patActivDetailHeader
+{
+ font-size: 15pt; font-weight:normal; margin-bottom: 5px; margin-top: 10px;
+}
+.patActivityDetailSummaryHeader, .patAccountDetailSummaryHeader
+{
+  font-weight:bold;
+}
+.patActivityDetailSummaryCount, .patAccountDetailSummaryAmount
+{
+ text-align:right; padding-left:10px;
+}
+.intReserveOuterData
+{
+border-bottom:solid 1px #bbbbbb;
+    style: noshade;
+}
+table.intermediate
+{
+ 	width:100%;
+}
+.intrRowSeparator
+{
+	height:1px;
+	border-top:solid 1px #bbbbbb;
+    style: noshade;
+}
+th
+{
+	vertical-align:top;
+}
+body, td, th
+{
+	font-size:12px;
+}
+body,h3,all,td,th,li,p
+{
+	color:#000000;
+}
+a, a:link, a:active, a:hover, a:visited
+{
+	color: #596085;
+	font-weight: normal;
+}
+a, a:link, a:visited, a:active
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+a.bold
+{
+	font-weight: bold;
+}
+hr
+{
+        color: #bbbbbb;
+        style: noshade;
+        margin-top:0px;
+        height:1px;
+        size:1px;
+}
+.navigation
+{
+        text-align:center;
+}
+a.white, .white, a.white:link, a.white:active, a.white:hover, a.white:visited
+{
+        color:#e0e0e0;
+        padding-right:4px;
+        padding-left:4px;
+}
+a.white:hover
+{
+        color:#ffffff;
+}
+.unselected
+{
+	background-color:#9999CC;
+    color:#ffffff;
+}
+.selected
+{
+	background-color:#9999CC;
+    color:#ffffff;
+}
+.reverse
+{
+	background-color:#c08a9f;
+    color:#ffffff;
+    font-weight:bold;
+}
+.message
+{
+        color:#2053b9;
+}
+.tabheader
+{
+    background-color:#41452A;
+}
+.sortable
+{
+	text-decoration: underline;
+	font-size:11px;
+}
+font.emphasis, a.emphasis
+{
+	font-size:18px;
+}
+.field_inside
+{
+	background-color:#f3f3f3;
+}
+.field
+{
+	border-color:#ffffff;
+	border-width:1px;
+	border-style:solid;
+	background-color:#f9f9f9;
+}
+.border
+{
+	background-color:#e0e0e0;
+}
+.gray
+{
+	color:#a0a0a0;
+}
+.red
+{
+	color:#ff0000;
+}
+.highlight
+{
+    text-decoration: underline;
+}
+body
+{
+	margin:0px;
+	background-color:#ffffff;
+	background-repeat:no-repeat;
+}
+img { border:0px; }
+.outerTable
+{
+	width: 100%;
+}
+.browseCell
+{
+	text-align: right;
+	padding-right: 10px;
+}
+.reserveBrowseCell
+{
+        text-align: center;
+}
+.highlight0 { background-color:ffff66; }
+.highlight1 { background-color:A0FFFF; }
+.highlight2 { background-color:99ff99; }
+.highlight3 { background-color:ff9999; }
+.highlight4 { background-color:ff66ff; }
+.highlight5 { background-color:880000; }
+.highlight6 { background-color:00aa00; }
+.highlight7 { background-color:886800; }
+.highlight8 { background-color:004699; }
+.highlight9 { background-color:990099; }
+table.message
+{
+    width:100%;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+table.message td
+{
+    padding: 8px 8px 8px 8px;
+    border-bottom: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    color: #777;
+    background: #f8f8f8;
+    font-weight: normal;
+    text-align: left;
+}
+// -->
+</style>
+
+</head>
+<body>
+<!-- $Id: header_sidebar.html,v 1.2 2003/08/19 13:14:39 webgw Exp $ -->
+﻿<!-- $Id: headerLevel1.html,v 1.6 2003/11/10 14:36:07 webgw Exp $ -->
+<script language="JavaScript"><!--
+var w = true;
+function p(x,y) { if(document.images){ x.src = "http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/" + y;}}
+var help_text = "<b>Using this catalog...</b><hr>Welcome! You will notice that the left side features a <i>Quick Search</i> area that will allow for basic keyword searches. <p>For more precision, use the <i>Keyword Search</i> button in the row of button across the screen to perform the same search but with more control over where 'hemingway' should appear.</p>";
+//-->
+</script>
+<table cellpadding=0 cellspacing=0 border=0 width=700>
+<tr><td colspan=3><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=17 alt=""></td></tr>
+<tr><td colspan=3>
+<table cellpadding=0 cellspacing=0 border=0><tr><td>
+<img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=17 height=34 alt=""></td><td valign=top>
+<a href="javascript:void(0);" onclick="slide.toggleMenu('menu2');" pronmouseout="slide.hideMenu('menu2');"><!-- Patron Access -->Bạn đọc truy cập</a> |
+<a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=SAVESESSION&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><!-- Save Session-->Lưu phiên làm việc </a> |
+<a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?skin=default&lng=vn&sessionid=9819988150832623760"><!-- Close Session -->Đóng phiên làm việc </a>
+</td></tr></table>
+<div style="display:none;">
+<!-- If you want the images back. -->
+<table cellpadding=0 cellspacing=0 border=0><tr>
+<td><a href="javascript:void(0);" onclick="slide.toggleMenu('menu2');" pronmouseout="slide.hideMenu('menu2');"><img border=0 src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/6.gif" width=145 height=24 alt="" malt="Patron Access"></a></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=SAVESESSION&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><img border=0 src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/7.gif" width=83 height=24 alt="Save Session "></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?skin=default&lng=vn&sessionid=9819988150832623760"><img border=0 src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/8.gif" width=154 height=24 alt="Close Session "></td>
+</tr></table>
+</div>
+</td></tr>
+<tr><td colspan=3 align=right><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=START&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&"><img border=0 src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/1.jpg" width=676 height=90 alt="VTLS Chameleon iPortal"></a></td><tr>
+<tr><td colspan=3 bgcolor=#333333>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td class=navigation width=92><a class=white href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=START&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&"><!-- Home -->Trang chủ</a></td>
+<td bgcolor=#ffffff width=1><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=31 alt=""></td>
+<td class=navigation width=99><a class=white href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=KEYWORD&function=SEARCHSCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><!-- Keyword -->Từ khóa</a></td>
+<td bgcolor=#ffffff width=1><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=31 alt=""></td>
+<td class=navigation><a class=white href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=HEADING&function=SEARCHSCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><!-- Heading Keyword -->Từ khóa đề mục</a></td>
+<td bgcolor=#ffffff width=1><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=31 alt=""></td>
+<td class=navigation><a class=white href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=RESERVE&function=RESERVESCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><!-- Reserve -->Lưu trữ	</a></td>
+<td bgcolor=#ffffff width=1><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=31 alt=""></td>
+<td class=navigation><a class=white href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=EXTERNALDBLIST&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&"><!-- External Databases -->CSDL khác</a></td>
+<td bgcolor=#ffffff width=1><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=31 alt=""></td>
+<td class=navigation><a class=white href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=FREEFORM&function=SEARCHSCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><!-- Expert -->Chuyên nghiệp</a></td>
+<td bgcolor=#ffffff width=1><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=31 alt=""></td>
+<td class=navigation><a class=white href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=VIEWCART&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&peformat=brief"><!-- Cart -->Giỏ hàng </a></td>
+<td bgcolor=#ffffff width=1><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=31 alt=""></td>
+<td class=navigation><a class=white onclick="slide.toggleMenu('menu1');" href="javascript:void(0);"><!-- Help -->Trợ giúp</a></td>
+</tr></table>
+<div style="display:none;">
+<!-- If you want the images back. -->
+<table cellpadding=0 cellspacing=0 border=0><tr>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=START&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&"><img border=0 onmouseover="p(this, 'a1.gif');" onmouseout="p(this, 'a0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/a0.gif" width=93 height=31 alt="Home"></a></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=KEYWORD&function=SEARCHSCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><img border=0 onmouseover="p(this, 'b1.gif');" onmouseout="p(this, 'b0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/b0.gif" width=101 height=31 alt="Keyword "></a></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=HEADING&function=SEARCHSCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><img border=0 onmouseover="p(this, 'c1.gif');" onmouseout="p(this, 'c0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/c0.gif" width=103 height=31 alt="Heading Keyword"></a></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=RESERVE&function=RESERVESCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><img border=0 onmouseover="p(this, 'd1.gif');" onmouseout="p(this, 'd0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/d0.gif" width=61 height=31 alt="Reserve "></a></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=EXTERNALDBLIST&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&"><img border=0 onmouseover="p(this, 'e1.gif');" onmouseout="p(this, 'e0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/e0.gif" width=138 height=31 alt="External Databases"></a></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=FREEFORM&function=SEARCHSCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&submit=TabData"><img border=0 onmouseover="p(this, 'f1.gif');" onmouseout="p(this, 'f0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/f0.gif" width=88 height=31 alt="Expert "></a></td>
+<td><a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=VIEWCART&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&peformat=brief"><img border=0 onmouseover="p(this, 'g1.gif');" onmouseout="p(this, 'g0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/g0.gif" width=76 height=31 alt="Cart "></a></td>
+<td><a aonmouseover="slide.showMenu('menu1');" onclick="slide.toggleMenu('menu1');" href="javascript:void(0);"><img border=0 onmouseover="p(this, 'h1.gif');" onmouseout="p(this, 'h0.gif');" src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/h0.gif" width=40 height=31 balt="Help " alt=""></a></td>
+</tr></table>
+</div>
+</td></tr>
+<tr><td colspan=3><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=1 alt=""></td></tr>
+</table>
+
+<table cellpadding=0 cellspacing=0 border=0 width=700>
+<tr><td valign=top bgcolor=#f0f0f0 width=192>
+<img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=192 height=1 alt=""><br>
+﻿<!-- $Id: sidebar.html,v 1.3 2003/08/19 17:51:18 webgw Exp $ -->
+<table cellpadding=8 cellspacing=0 border=0>
+<tr><td valign=top>
+<!-- $Id: module_open.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<table cellspacing=0 cellpadding=1 border=0 width=100%><tr class=border><td> 
+<table cellspacing=0 cellpadding=7 border=0 width=100%><tr><td class=field align="center">
+
+<!-- Insert Hidden Data Fields -->
+<form name="ASRCHFORM" method="get" action="/cgi-bin/gw_43_3/chameleon" onSubmit="if(this.t1.value == '') { alert('Nhập cụm từ cần tìm kiếm vào ô trống.'); this.t1.focus(); return false; }">
+<input type="hidden" name="sessionid" value="9819988150832623760">
+<input type="hidden" name="skin" value="default">
+<input type="hidden" name="submittheform" value="">
+<input type="hidden" name="usersrch" value="1">
+<input type="hidden" name="beginsrch" value="1">
+<input type="hidden" name="elementcount" value="3">
+<input type="hidden" name="function" value="INITREQ">
+<input type="hidden" name="search" value="KEYWORD">
+<input type="hidden" name="lng" value="vn">
+<input type="hidden" name="pos" value="1">
+<input type="hidden" name="conf" value="./chameleon.conf">
+<input type="hidden" name="patronhost" value ="localhost+1111+DEFAULT">
+
+<b>Tìm nhanh</b>
+<hr size=1>
+<table cellspacing=0 cellpadding=2 border=0 ID="Table1">
+<tr><td>Cụm từ tìm kiếm:</td></tr>
+<tr><td><input tabindex="0" name="t1" size="14" maxlength="100">
+</td></tr>
+<tr><td><input type=hidden name=u1 value=1035></td></tr>
+<tr><td>
+<script>
+<!--
+function checkSearch(the_form)
+{
+	if(the_form.t1.value == '' && the_form.u2.value != '1035')
+	{
+		the_form.t1.value = the_form.t2.value;
+		the_form.u1.value = the_form.u2.value;
+		the_form.t2.value = the_form.u2.value = '';
+	}
+	return true;
+}
+function changeSearch(the_form, u_value, t_value)
+{
+	the_form.t2.value = t_value;
+	the_form.u2.value = u_value;
+}
+//-->
+</script>
+<input type=hidden name=op1 value="AND">
+<input type=hidden name=t2 value="">
+<input type=hidden name=u2 value="1035">
+<table>
+<tr><td><input type=radio name=ignore onclick="changeSearch(this.form, '', '1035');" checked></td><td>Tất cả</td></tr>
+<tr><td><input type=radio name=ignore onclick="changeSearch(this.form, '1001', 'a');"></td><td>Sách</td></tr>
+<tr><td><input type=radio name=ignore onclick="changeSearch(this.form, '8701', 'n');"></td><td>Báo</td></tr>
+<tr><td><input type=radio name=ignore onclick="changeSearch(this.form, '8701', 'p');"></td><td>Tạp chí</td></tr>
+</table>
+<tr><td><input type="submit" value="Tìm kiếm" onClick="checkSearch(this.form);"></td></tr>
+<tr><td><input type="hidden" name="host" value="localhost+1111+DEFAULT"></td></form></tr>
+</table>
+<!-- $Id: module_close.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+</td></tr></table>
+</td></tr></table>
+
+<br>
+<!-- $Id: module_open.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<table cellspacing=0 cellpadding=1 border=0 width=100%><tr class=border><td> 
+<table cellspacing=0 cellpadding=7 border=0 width=100%><tr><td class=field align="center">
+
+<a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?host=localhost%2b1111%2bDEFAULT&patronhost=localhost%201111%20DEFAULT&search=PATRON&function=FILTERSCR&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&u1=12&itemu1=12&u1=12&pos=1&prevpos=1&">Chế độ lọc</a>
+<script>
+<!--
+var is_on = "";
+if(is_on != "") document.write("<hr>");
+// -->
+</script>
+
+<!-- $Id: module_close.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+</td></tr></table>
+</td></tr></table>
+
+<br>
+<!-- $Id: module_open.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<table cellspacing=0 cellpadding=1 border=0 width=100%><tr class=border><td> 
+<table cellspacing=0 cellpadding=7 border=0 width=100%><tr><td class=field align="center">
+
+<!-- Insert Hidden Data Fields -->
+<form name="ASRCHFORM" method="get" action="/cgi-bin/gw_43_3/chameleon" onSubmit="if(this.t1.value == '') { alert('Nhập cụm từ cần tìm kiếm vào ô trống.'); this.t1.focus(); return false; }">
+<input type="hidden" name="sessionid" value="9819988150832623760">
+<input type="hidden" name="skin" value="default">
+<input type="hidden" name="submittheform" value="">
+<input type="hidden" name="usersrch" value="1">
+<input type="hidden" name="beginsrch" value="1">
+<input type="hidden" name="elementcount" value="3">
+<input type="hidden" name="function" value="INITREQ">
+<input type="hidden" name="search" value="SCAN">
+<input type="hidden" name="lng" value="vn">
+<input type="hidden" name="pos" value="1">
+<input type="hidden" name="conf" value="./chameleon.conf">
+<input type="hidden" name="patronhost" value ="localhost+1111+DEFAULT">
+
+<b>Tìm lướt </b>
+<hr size=1>
+<table cellspacing=0 cellpadding=2 border=0>
+<tr><td>Cụm từ tìm kiếm:</td></tr>
+<tr><td><input tabindex="0" name="t1" size="14" maxlength="100">
+</td></tr>
+<tr><td><select name="u1">
+<option value="4">Tiêu đề </option>
+<option value="1003">Tác giả</option>
+<option value="21">Chủ đề</option>
+<option value="2009">Nhà xuất bản</option>
+<option value="20">Kí hiệu xếp giá</option>
+<option value="2019">Tiêu đề tạp chí</option>
+<option value="12">Số xếp giá nội bộ</option>
+</select>
+</td></tr>
+<tr><td><input type="submit" value="Tìm kiếm" onClick="this.form.submittheform.value = 'Search'; "></td></tr>
+<tr><td><br>Cơ sở dữ liệu: </td></tr>
+<tr><td><input type="hidden" name="host" value="localhost+1111+DEFAULT">Cơ sở dữ liệu của HUT
+</td></form></tr>
+</table>
+<!-- $Id: module_close.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+</td></tr></table>
+</td></tr></table>
+
+<br>
+<!-- $Id: module_open.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<table cellspacing=0 cellpadding=1 border=0 width=100%><tr class=border><td> 
+<table cellspacing=0 cellpadding=7 border=0 width=100%><tr><td class=field align="center">
+
+<a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=VIEWCART&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&peformat=brief">Có<b>0</b> tài liệu trong giỏ của bạn.</a>
+<!-- $Id: module_close.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+</td></tr></table>
+</td></tr></table>
+
+<br>
+<!-- $Id: module_open.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<table cellspacing=0 cellpadding=1 border=0 width=100%><tr class=border><td> 
+<table cellspacing=0 cellpadding=7 border=0 width=100%><tr><td class=field align="center">
+
+<a href="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?patronhost=localhost%201111%20DEFAULT&search=NOSRCH&function=VIEWHISTORY&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&pos=1&prevpos=1&" class=bold>Lược sử tìm kiếm</a></b>
+<ul>
+<!--<hr size=1>-->
+
+</ul>
+<!-- $Id: module_close.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+</td></tr></table>
+</td></tr></table>
+
+<br>
+<!-- $Id: bookcovers.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<!-- $Id: module_open.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<table cellspacing=0 cellpadding=1 border=0 width=100%><tr class=border><td> 
+<table cellspacing=0 cellpadding=7 border=0 width=100%><tr><td class=field align="center">
+
+<b>Giới thiệu sách</b><hr size=1>
+<script language="JavaScript">
+<!--
+function replace(x, y, z)
+{
+	while(x.indexOf(y) != -1)
+		x = x.replace(y, z);
+	return x;
+} 
+var isbn_array = new Array("0812925866", "0974483907", "974924673");
+var index = Math.floor(Math.random()* isbn_array.length);
+url="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?host=localhost%2b1111%2bDEFAULT&patronhost=localhost%201111%20DEFAULT&search=FREEFORM&function=INITREQ&SourceScreen=PATRONATTEMPT&sessionid=9819988150832623760&skin=default&conf=.%2fchameleon.conf&lng=vn&itemu1=0&u1=0&t1=7%3aISBNNUMBER&pos=1&prevpos=1&usersrch=1&beginsrch=1";
+//var img_tag = "<img src=\"http://lib.syndetics.com/index.aspx?isbn=" + isbn_array[index] + "/MC.GIF\" border=0 alt=\"\">"; 
+var img_tag = "<img src=\"http://opac.hut.edu.vn/multim/cover_book/" + isbn_array[index] + ".gif\" border=0 >";
+//document.write("<a href=\"" + replace(url, "ISBNNUMBER", isbn_array[index]) + "\">");
+document.write("<a href=\"http://opac.hut.edu.vn/cgi-bin/gw_43_3/chameleon?sessionid=&skin=default&submittheform=Search&usersrch=1&beginsrch=1&elementcount=3&function=INITREQ&search=KEYWORD&lng=vn&pos=1&conf=.%2Fchameleon.conf&t1=" + isbn_array[index] +"&u1=12101&op1=AND&t2=&u2=4&op2=AND&t3=&u3=4&host=localhost%2B1111%2BDEFAULT\">");
+document.write(img_tag);
+document.write("</a>");
+// -->
+</script>
+<!-- $Id: module_close.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+</td></tr></table>
+</td></tr></table>
+
+
+</td>
+</tr>
+</table>
+
+</td>
+<td><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=1 alt=""></td>
+<td valign=top width=100% bgcolor=#E6E7EC><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=188 alt="" align=left>
+<table cellpadding=16 width=100%><tr><td>
+
+<h2>Lỗi liên lạc.</h2>
+<gw_comm>Error Initializing Server</gw_comm>
+
+<form name="searchdata">
+<input type="hidden" name="elementcount" value="3">
+<input type="hidden" name="skin" value="default">
+<input type="hidden" name="search" value="PATRON">
+<input type="hidden" name="sessionid" value="9819988150832623760">
+</form>
+
+
+<br>
+
+<table><tr><td></td></tr></table>
+
+<br>
+
+<table><tr><td></td></tr></table>
+
+<!-- $Id: footerLevel1.html,v 1.2 2003/08/19 13:14:39 webgw Exp $ -->
+</td></tr></table>
+</td></tr>
+<tr>
+<td bgcolor=#f0f0f0>
+<table width=100% cellpadding=0 cellspacing=0 border=0><tr>
+<td valign=bottom><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/2.gif" width=13 height=13 alt=""></td>
+<td align=right valign=bottom><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/1.gif" width=13 height=13 alt=""></td>
+</tr></table>
+</td>
+<td>
+</td>
+<td bgcolor=#E6E7EC>
+<table width=100% cellpadding=0 cellspacing=0 border=0><tr>
+<td valign=bottom><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/2.gif" width=13 height=13 alt=""></td>
+<td align=right valign=bottom><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/1.gif" width=13 height=13 alt=""></td>
+</tr></table>
+</td></tr></table>
+<br>
+</div>
+<!-- $Id: footer_common.html,v 1.5 2003/12/15 15:06:50 webgw Exp $ -->
+<table border=0 width=100%><tr><td><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/5.gif" alt="" hspace=10></td>
+<td width=100%>
+<table cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td colspan=2><b>Copyright &#169; 2003 VTLS Inc. All rights reserved.</b><br></td><td align=right><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=10 height=1 border=0 alt=""></td></tr>
+<tr><td colspan=2><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=5 alt=""></td></tr>
+<tr><td colspan=2 background="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/3.gif"><img src="SKINURL/common_files/skin_images/s.gif" width=1 height=1 alt=""></td></tr>
+<tr><td colspan=2><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=5 alt=""></td></tr>
+<tr><td valign=top><a href="http://www.vtls.com "><b>VTLS.com </b></a></td>
+<td align=right>
+<table cellpadding=0 cellspacing=0 border=0><form><tr><td nowrap>Select Language</td>
+<td><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=5 height=15 border=0 alt=""></td>
+<td><select name="URL" onChange="window.location.href=this.options[this.selectedIndex].value">
+<option value="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?lng=en&skin=default">English
+</option>
+<option value="http://opac.hust.edu.vn:80/cgi-bin/gw_43_3/chameleon?lng=vn&skin=default" selected>Vietnamese
+</option>
+</select>
+</td></tr></form></table>
+<img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=5 height=15 border=0 alt="">
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<br>
+&nbsp;
+<script language="javascript">
+slide.Registry = []
+slide.aniLen = 250
+slide.hideDelay = 0; //1000
+slide.minCPUResolution = 10
+// constructor
+function slide(id, dir, left, top, width, height) {
+this.ie = document.all ? 1 : 0
+this.ns4 = document.layers ? 1 : 0
+this.dom = document.getElementById ? 1 : 0
+if (this.ie || this.ns4 || this.dom) {
+this.id = id
+this.dir = dir
+this.orientation = dir == "left" || dir == "right" ? "h" : "v"
+this.dirType = dir == "right" || dir == "down" ? "-" : "+"
+this.dim = this.orientation == "h" ? width : height
+this.hideTimer = false
+this.aniTimer = false
+this.open = false
+this.over = false
+this.startTime = 0
+this.gRef = "slide_"+id
+eval(this.gRef+"=this")
+slide.Registry[id] = this
+var d = document
+var strCSS = '<style type="text/css">';
+strCSS += '#' + this.id + 'Container { visibility:hidden; '
+strCSS += 'left:' + left + 'px; '
+strCSS += 'top:' + top + 'px; '
+strCSS += 'overflow:hidden; z-index:10000; }'
+strCSS += '#' + this.id + 'Container, #' + this.id + 'Content { position:absolute; '
+strCSS += 'width:' + width + 'px; '
+strCSS += 'height:' + height + 'px; '
+strCSS += 'clip:rect(0 ' + width + ' ' + height + ' 0); '
+strCSS += '}'
+strCSS += '</style>'
+d.write(strCSS)
+this.load()
+}
+}
+slide.prototype.load = function() {
+var d = document
+var lyrId1 = this.id + "Container"
+var lyrId2 = this.id + "Content"
+var obj1 = this.dom ? d.getElementById(lyrId1) : this.ie ? d.all[lyrId1] : d.layers[lyrId1]
+if (obj1) var obj2 = this.ns4 ? obj1.layers[lyrId2] : this.ie ? d.all[lyrId2] : d.getElementById(lyrId2)
+var temp
+if (!obj1 || !obj2) window.setTimeout(this.gRef + ".load()", 100)
+else {
+this.container = obj1
+this.menu = obj2
+this.style = this.ns4 ? this.menu : this.menu.style
+this.homePos = eval("0" + this.dirType + this.dim)
+this.outPos = 0
+this.accelConst = (this.outPos - this.homePos) / slide.aniLen / slide.aniLen
+// set event handlers.
+if (this.ns4) this.menu.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT);
+this.menu.onmouseover = new Function("slide.showMenu('" + this.id + "')")
+this.menu.onmouseout = new Function("slide.hideMenu('" + this.id + "')")
+//set initial state
+this.endSlide()
+}
+}
+slide.showMenu = function(id)
+{
+var reg = slide.Registry
+var obj = slide.Registry[id]
+if (obj.container) {
+obj.over = true
+for (menu in reg) if (id != menu) slide.hide(menu)
+if (obj.hideTimer) { reg[id].hideTimer = window.clearTimeout(reg[id].hideTimer) }
+if (!obj.open && !obj.aniTimer) reg[id].startSlide(true)
+}
+}
+slide.toggleMenu = function(id)
+{
+var obj = slide.Registry[id]
+if(obj.open) slide.hide(id); else slide.showMenu(id);
+}
+slide.hideMenu = function(id)
+{
+var obj = slide.Registry[id]
+if (obj.container) {
+if (obj.hideTimer) window.clearTimeout(obj.hideTimer)
+//obj.hideTimer = window.setTimeout("slide.hide('" + id + "')", slide.hideDelay);
+}
+}
+slide.hideAll = function()
+{
+var reg = slide.Registry
+for (menu in reg) {
+slide.hide(menu);
+if (menu.hideTimer) window.clearTimeout(menu.hideTimer);
+}
+}
+slide.hide = function(id)
+{
+var obj = slide.Registry[id]
+obj.over = false
+if (obj.hideTimer) window.clearTimeout(obj.hideTimer)
+obj.hideTimer = 0
+if (obj.open && !obj.aniTimer) obj.startSlide(false)
+}
+slide.prototype.startSlide = function(open) {
+this[open ? "onactivate" : "ondeactivate"]()
+this.open = open
+if (open) this.setVisibility(true)
+this.startTime = (new Date()).getTime()
+this.aniTimer = window.setInterval(this.gRef + ".slide()", slide.minCPUResolution)
+}
+slide.prototype.slide = function() {
+var elapsed = (new Date()).getTime() - this.startTime
+if (elapsed > slide.aniLen) this.endSlide()
+else {
+var d = Math.round(Math.pow(slide.aniLen-elapsed, 2) * this.accelConst)
+if (this.open && this.dirType == "-") d = -d
+else if (this.open && this.dirType == "+") d = -d
+else if (!this.open && this.dirType == "-") d = -this.dim + d
+else d = this.dim + d
+this.moveTo(d)
+}
+}
+slide.prototype.endSlide = function() {
+this.aniTimer = window.clearTimeout(this.aniTimer)
+this.moveTo(this.open ? this.outPos : this.homePos)
+if (!this.open) this.setVisibility(false)
+if ((this.open && !this.over) || (!this.open && this.over)) {
+this.startSlide(this.over)
+}
+}
+slide.prototype.setVisibility = function(bShow) {
+var s = this.ns4 ? this.container : this.container.style
+s.visibility = bShow ? "visible" : "hidden"
+}
+slide.prototype.moveTo = function(p) {
+this.style[this.orientation == "h" ? "left" : "top"] = this.ns4 ? p : p + "px"
+}
+slide.prototype.getPos = function(c) {
+return parseInt(this.style[c])
+}
+slide.prototype.onactivate = function() { }
+slide.prototype.ondeactivate = function() { }
+var myOffset = 147;
+var myMenu = new slide("menu1", "down", 701, 63, 200, 900);
+var myMenu2 = new slide("menu2", "down", 77, 35, 400, 157);
+//myMenu.onactivate = repositionMenu;
+function repositionMenu(){
+var newLeft = getWindowWidth() / 2 + myOffset;
+myMenu.container.style ? myMenu.container.style.left = newLeft + "px" : myMenu.container.left = newLeft;
+}
+function getWindowWidth(){
+return window.innerWidth ? window.innerWidth : document.body.offsetWidth;
+}
+</script>
+<div id="menu2Container">
+<div id="menu2Content">
+<!-- $Id: patron_empowerment.html,v 1.4 2003/12/15 15:06:50 webgw Exp $ -->
+<!-- $Id: module_open.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+<table cellspacing=0 cellpadding=1 border=0 width=100%><tr class=border><td> 
+<table cellspacing=0 cellpadding=7 border=0 width=100%><tr><td class=field align="center">
+
+<!-- $Id: portal_login_form.html,v 1.2 2003/08/19 13:14:40 webgw Exp $ -->
+<form name="patronsearch" method="post" action="/cgi-bin/gw_43_3/chameleon">
+<input type="hidden" name="function" value="PATRONATTEMPT">
+<input type="hidden" name="search" value="PATRON">
+<input type="hidden" name="lng"value="vn">
+<input type="hidden" name="conf" value="./chameleon.conf">
+<input type="hidden" name="sessionid" value="9819988150832623760">
+<input type="hidden" name="skin" value="default">
+<input type="hidden" name="u1" value="12">
+<input type="hidden" name="SourceScreen" value="PATRONLOGIN">
+
+<table border="0" width="100%">
+<tr><td>Mã bạn đọc: </td><td><input type="password" name="patronid" size="10" maxlength="50"></td></tr>
+<tr><td>Mật khẩu: </td><td><input type="password" name="patronpassword" size="10" maxlength="50"></td></tr>
+<tr><td>Thư viện: </td><td><!-- Database Listbox -->
+<select name="patronhost">
+<option value="localhost 1111 DEFAULT" selected>Cơ sở dữ liệu của HUT
+</option>
+</select>
+</td></tr>
+<tr><td colspan=2><hr size=1></td></tr>
+<tr><td></td><td><input type="submit" value="Gửi"></td></form></tr>
+</table>
+
+
+
+<!-- Enable Toggle
+<table align="right"><tr><td><a href="#" onclick="slide.toggleMenu('menu2');">Close Window</a></td></tr></table>
+-->
+
+<!-- $Id: module_close.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ -->
+</td></tr></table>
+</td></tr></table>
+
+
+</div>
+</div>
+<div id="menu1Container">
+<div id="menu1Content">
+<table cellpadding=0 cellspacing=0 border=0 width=200>
+<tr><td><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/3.jpg" width=200 height=177 alt=""></td></tr>
+<tr><td><img src="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/common_files/skin_images/s.gif" width=1 height=1 alt=""></td></tr>
+<tr><td>
+<table cellpadding=16 width=200><tr><td>
+<script>
+<!--
+//document.write(help_text);
+//-->
+</script>
+<!-- @modules/iportal.html@ -->
+<!-- $Id: help_general.html,v 1.2 2003/08/19 13:14:41 webgw Exp $ help_general.html,v 1.1.1.1 2003/08/04 19:50:11 webgw Exp $ -->
+<html>
+<head>
+<title>VTLS ChameleonGateway Tutorial</title>
+<link rel=stylesheet type="text/css" href="style.css">
+</head>
+<body >
+
+
+Kích vào đường link dưới đây để xem các trợ giúp liên quan. 
+<p>
+<b>TÌM KIẾM</b><br>
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/Basic Search.htm', 'helpwin','width=800,height=600menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Tìm lướt</a><br>
+<!-- <a href="http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/browse.shtml" target="blank">Browse</a><br> -->
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/Keyword Search.htm', 'helpwin','width=800,height=600,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Tìm theo từ khóa</a><br>
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/Heading Keyword Search.htm', 'helpwin','width=800,height=600,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Heading Keyword</a><br>
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/Other Library Search.htm', 'helpwin','width=800,height=600,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Tìm kiếm trên thư viện khác</a><br>
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/Advance search.htm', 'helpwin','width=800,height=600,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Tìm kiếm nâng cao</a><br>
+
+
+<!--<a href="patron.shtml">Patron</a><br>-->
+<p>
+<b>CÁC TÍNH NĂNG</b><br>
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/Using Book List.htm', 'helpwin','width=800,height=600,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Sử dụng danh sách</a><br>
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/search history.htm', 'helpwin','width=800,height=600,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Lược sử tìm kiếm</a><br>
+<a class="unboldnav" href="#" onClick = "helpwin=window.open('http://opac.hust.edu.vn:80/gw_43_3/html/default/vn/help_screens/Limits Search.htm', 'helpwin','width=800,height=600,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');">Sử dụng Thu hẹp tìm kiếm</a><br>
+</body>
+</html>
+
+</td><tr></table>
+</td></tr>
+</table>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
